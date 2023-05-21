@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style1.css"> 
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  body
+  {
+  margin:0px 0px 0px 0px;
+  background-color: #b2b4ff;
+  }
+  </style>
+</head>
+<body>
+  <div class="header" id="topheader" >
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container text-uppercase p-2">
+          <a class="navbar-brand font-weight-bold text-white logo" href="../../../index.php"><mark style="background-color: blueviolet;">C</mark>odingHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.php">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.php#categories">Categories</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../index.php#footerdiv">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.php#contact">Contact</a>
+            </li>
+          </ul> 
+        </div>
+        </div>
+      </nav>
+    
+</div>
+<section class = "lcs_prob">
+    
+        <h1 style="color:whitesmoke;">Mathematically Hard</h1>
+        <p style="font-weight: bold;">Link :<a href="#">https://lightoj.com/problem/mathematically-hard</a></p>
+        <p style="font-weight: 500;font-weight: sans-sarif;color:blue;font-size: 30px"><b style="color:whitesmoke;">Problem summary:</b></p>
+          
+        <div class="table-bordered p-3" style="background-color:#b2b4ff;border-radius: 10px;border-width:2px;border-color:white;margin-left:15px;margin-right:15px;">
+          
+        <pre style="font-weight: 700;font-weight: sans-sarif;color:black;font-size: 20px;line-height: 1.5;">
+          We are given two integers a and b. We will have to find scores of all the numbers ranging from a to b. Here,
+          score(x)=n<sup>2</sup> (n = number of integers from 1 to n that are comprime with x)
+          i.e. no. of integers such that gcd(x,i)=1 (1<=i<=n)</pre>
+        </div>
+
+         <p style="font-weight: 500;font-weight: sans-sarif;color:whitesmoke;font-size: 30px;"><b>Solution:<p><b>
+          <div class="table-bordered p-3" style="background-color:#b2b4ff;border-radius: 10px;border-width:2px;border-color:white;margin-left:15px;margin-right:15px;">
+        
+            <pre style="font-weight: 700;font-weight: sans-sarif;color:black;font-size: 20px;line-height: 1.5;">
+          We know that, Euler's totient function gives # of coprimes from 1 to n with
+            <span>&#632;</span>(n) = n * (1-1/p1) * (1-1/p2) ...(1-1/p<sub>k</sub> , where p1,p2,p3...pk are prime factors of n.
+            we will use sieve to find phi(n) . In sieve while a number x is divisible by a prime factor p . we will divide x by p and multiply it by x-1
+            i.e. phi[x]/=x and p[x]*=(x-1)
+            we will also have to use prefix sum techinique res = Pref_sum[b]-Pref_sum[a-1]. Otherwise we will get TLE
+            <span style="color:blue;text-decoration:underline" >N.B.</span> we will have to use <mark style="background-color:aqua;">unsigned long long</mark>mark here because the result won't fit in long long</pre></div>
+    
+</section>
+
+
+
+<!-- ********header parts end ******** -->
+<!-- ********Three extra header div starts ******-->
+
+<!-- ********Three extra header div ends ******-->
+
+<!-- ********Offer section starts ******-->
+<!-- *******Project done ends ***********-->
+<!-- *******Our pricing start s ***********-->
+
+<!-- *******Our pricing ends ***********-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $('.count').counterUp(
+    {
+      delay:20,
+      time:3000
+    }
+  );
+</script>
+</body>
+</html>

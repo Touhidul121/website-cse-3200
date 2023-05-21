@@ -1,0 +1,241 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins',sans-serif;}
+
+a{text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+li{list-style: none;}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060
+}
+i
+{
+    color:#2fccd0;
+}
+.extra-div h2, .service-div h2
+{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 170, 255, 0.3),rgba(0, 255, 179, 0.3)),url(../images/laptop_image.jfif);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    clip-path: polygon(100% 0%,100% 87%,50% 100%,0 87%,0 0);
+    position:relative;
+}
+
+.header:before
+{
+content: "";
+position:relative;
+top:0%;
+bottom:0%;
+left:0;
+right: 0;
+opacity: .3;
+z-index: -1;
+background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%,#16c9fb 100%);
+}
+
+.navbar:before
+{
+    content: "";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%,#16c9fb 100%);   
+}
+
+.nav-item a
+{
+    color: #000 !important ;
+    font-weight: bold;
+}
+.nav-item a:hover
+{
+    color:#edeef4ee !important;
+}
+.header-section
+{
+    width:100%;
+    height: inherit;
+    text-align: center;
+    position: relative;
+}
+.logo
+{
+     text-transform: uppercase;
+     animation: aagepiche 2s linear infinite;
+     animation-direction: alternate;
+}
+
+@keyframes aagepiche
+{
+    from {padding-left: 40px;}
+    to {padding-right: 40px;}
+}
+
+.center-div
+{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a
+{
+    border:1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height:1.4 ;
+    text-align: center;
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 5px 0 5px 0;
+    color:whtie;
+}
+
+.header-extradiv
+{
+    width:100%;
+   height: auto; 
+   margin-bottom: 3px;
+   border-radius: 0%!important;
+   text-align: center;
+}
+.header-extradiv h1
+{
+    height: auto; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+/**********Thre extradiv section starts *********/
+
+
+.extra-div
+{
+    background-color: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-color: #000;
+    border-spacing: 1px;
+    transition: 0.3s
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    transform: translateY(-20px) ;
+}
+
+/*********Three Extradiv-ends Here*************/
+/*************service offer css start**********/
+
+ 
+/*************service offter css ends***********/
+/************Project done starts here ********/
+
+/**********Pricing css ends here **********/
+
+/**********Contact Us starts Here **********/
+.contactus
+{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus:before
+{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background: linear-gradient(330deg,#16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.form-button button
+{
+    border:1px solid;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+
+}
+
+/*********Contact Us Ends Here *********/
+
+/*********Footer Section start Here *********/
+.footersection
+{  
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background-color: #00abff;
+    position: relative;
+}
+
+.footersection p
+{
+    color: #fff;
+
+}
+/********Footer Section Ends Here ***********/
+/********* Hide scroll-bar *************/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space /
+    background: transparent; / optional: just make scrollbar invisible /
+    }
+    / optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    }
+}
+/********* Hide scroll-bar *************/
